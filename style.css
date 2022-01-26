@@ -58,7 +58,7 @@ body {
     padding: 25px;
     transition: 0.5s all;
 
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .popup.active {

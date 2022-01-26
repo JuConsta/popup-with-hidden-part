@@ -5,7 +5,7 @@ let closePopupButton = document.querySelector('.close-popup');
 
 let hiddenPopup = document.querySelector('.hidden-popup');
 let openHiddenPopupButton = document.querySelector('.open-hidden-popup');
-let inputName = document.querySelector('.input-name');
+let buttonSubmit = document.querySelector('.button-submit');
 
 openPopupButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
@@ -30,5 +30,5 @@ document.addEventListener('click', (e) => {
 
 openHiddenPopupButton.onclick = function() {
     hiddenPopup.classList.remove('hide');
-    inputName.focus();
+    buttonSubmit.focus();
 };
