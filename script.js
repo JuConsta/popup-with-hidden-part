@@ -5,6 +5,7 @@ let closePopupButton = document.querySelector('.close-popup');
 
 let hiddenPopup = document.querySelector('.hidden-popup');
 let openHiddenPopupButton = document.querySelector('.open-hidden-popup');
+let inputName = document.querySelector('.input-name');
 
 openPopupButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
@@ -17,6 +18,7 @@ openPopupButtons.forEach((button) => {
 closePopupButton.addEventListener('click',() => {
     popupBg.classList.remove('active');
     popup.classList.remove('active');
+    hiddenPopup.classList.add('hide');
 });
 
 document.addEventListener('click', (e) => {
@@ -27,5 +29,6 @@ document.addEventListener('click', (e) => {
 });
 
 openHiddenPopupButton.onclick = function() {
-    hiddenPopup.classList.toggle('hide');
+    hiddenPopup.classList.remove('hide');
+    inputName.focus();
 };
